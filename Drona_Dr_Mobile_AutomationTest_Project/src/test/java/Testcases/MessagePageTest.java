@@ -16,8 +16,31 @@ public class MessagePageTest extends BasePage {
 	static long endTime;
 
 
+    @FrameworkAnnotation(author= {"Husain"},category = CategoryType.MessagePageTest)
+	@Test(priority = 1 ,enabled = true , description = "Send Push Notifications to all patients Test")
+	public void SendPushNotificationInMessageSection() throws InterruptedException {
+		
+		loginPage = new LoginPage();
+		message= new MessagePage(); 
+		loginPage.loginByMobileNumber();
+		message.SendPushNotificationInMessageSection();		
+	}
+	    
+
 	    @FrameworkAnnotation(author= {"Husain"},category = CategoryType.MessagePageTest)
-		@Test(priority = 1 ,enabled = true , description = "Message Section Test")
+		@Test(priority = 2 ,enabled = true , description = "Send SMS to all patients Test")
+		public void SendSMSInMessageSection() throws InterruptedException {
+			
+			loginPage = new LoginPage();
+			message= new MessagePage(); 
+			loginPage.loginByMobileNumber();
+			message.SendSMSInMessageSection();		
+		}
+	    
+	    
+
+	    @FrameworkAnnotation(author= {"Husain"},category = CategoryType.MessagePageTest)
+		@Test(priority = 3 ,enabled = true , description = "Send Email to all patients Test")
 		public void SendEmailInMessageSection() throws InterruptedException {
 			
 			loginPage = new LoginPage();
@@ -25,6 +48,5 @@ public class MessagePageTest extends BasePage {
 			loginPage.loginByMobileNumber();
 			message.SendEmailInMessageSection();		
 		}
-
 
 }

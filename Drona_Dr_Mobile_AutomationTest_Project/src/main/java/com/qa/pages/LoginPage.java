@@ -33,7 +33,7 @@ public class LoginPage extends BasePage{
 		testUtil.doClick(loginContinue,"Login Button");
 	}
 	
-	public void loginByMobileNumber()   {
+	public void loginByMobileNumber() throws InterruptedException   {
 		getStartedClick();
 		String MobileNo = prop.getProperty("LoginMobileNo").trim();
 		loginByUserName(MobileNo);
@@ -44,6 +44,8 @@ public class LoginPage extends BasePage{
 			e.printStackTrace();
 		}
 		testUtil.doClick(login,"Login Button");	
+		Thread.sleep(40000);
+System.out.println("Wait over, after clicking on login button");
 		}
 	
 	

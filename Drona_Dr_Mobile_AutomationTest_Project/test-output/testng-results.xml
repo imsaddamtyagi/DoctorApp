@@ -1,32 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-14T14:48:21 IST" name="Suite" finished-at="2021-04-14T14:52:23 IST" duration-ms="241843">
+  <suite started-at="2021-04-14T16:42:10 IST" name="Suite" finished-at="2021-04-14T17:20:56 IST" duration-ms="2326701">
     <groups>
     </groups>
-    <test started-at="2021-04-14T14:48:21 IST" name="Test" finished-at="2021-04-14T14:52:23 IST" duration-ms="241843">
-      <class name="Testcases.MessagePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.MessagePageTest@740773a3]" started-at="2021-04-14T14:48:21 IST" name="setUp" finished-at="2021-04-14T14:49:01 IST" duration-ms="39203" status="PASS">
+    <test started-at="2021-04-14T16:42:10 IST" name="Test" finished-at="2021-04-14T17:20:56 IST" duration-ms="2326701">
+      <class name="Testcases.HelpPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:51:12 IST" name="setUp" finished-at="2021-04-14T16:51:31 IST" duration-ms="18547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SendEmailInMessageSection()[pri:1, instance:Testcases.MessagePageTest@740773a3]" started-at="2021-04-14T14:49:01 IST" name="SendEmailInMessageSection" description="Message Section Test" finished-at="2021-04-14T14:52:12 IST" duration-ms="191336" status="PASS">
+        <test-method signature="CallOurSupportPageTest()[pri:1, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:51:31 IST" name="CallOurSupportPageTest" description="Call our Support Page Test" finished-at="2021-04-14T16:54:08 IST" duration-ms="157430" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SendEmailInMessageSection -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.MessagePageTest@740773a3]" started-at="2021-04-14T14:52:12 IST" name="TearDown" finished-at="2021-04-14T14:52:23 IST" duration-ms="11251" status="PASS">
+        </test-method> <!-- CallOurSupportPageTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:54:08 IST" name="TearDown" finished-at="2021-04-14T16:54:20 IST" duration-ms="11871" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SendEmailInMessageSection status=SUCCESS method=MessagePageTest.SendEmailInMessageSection()[pri:1, instance:Testcases.MessagePageTest@740773a3] output={null}]]]>
+                <![CDATA[[TestResult name=CallOurSupportPageTest status=SUCCESS method=HelpPageTest.CallOurSupportPageTest()[pri:1, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- Testcases.MessagePageTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:54:20 IST" name="setUp" finished-at="2021-04-14T16:54:38 IST" duration-ms="17474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SendUsEmailPageTest()[pri:2, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:54:38 IST" name="SendUsEmailPageTest" description="Send Us Email Page Test" finished-at="2021-04-14T16:57:11 IST" duration-ms="153277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendUsEmailPageTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:57:11 IST" name="TearDown" finished-at="2021-04-14T16:57:21 IST" duration-ms="10361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SendUsEmailPageTest status=SUCCESS method=HelpPageTest.SendUsEmailPageTest()[pri:2, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:57:21 IST" name="setUp" finished-at="2021-04-14T16:57:40 IST" duration-ms="18498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ViewAllFAQTest()[pri:3, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:57:40 IST" name="ViewAllFAQTest" description="View All Question Page Test" finished-at="2021-04-14T17:00:28 IST" duration-ms="168082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewAllFAQTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:00:28 IST" name="TearDown" finished-at="2021-04-14T17:00:41 IST" duration-ms="12713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ViewAllFAQTest status=SUCCESS method=HelpPageTest.ViewAllFAQTest()[pri:3, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:00:41 IST" name="setUp" finished-at="2021-04-14T17:01:00 IST" duration-ms="19890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SearchQuestionArticleTest()[pri:4, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:01:00 IST" name="SearchQuestionArticleTest" description="Search Question article" finished-at="2021-04-14T17:03:50 IST" duration-ms="169472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchQuestionArticleTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:03:50 IST" name="TearDown" finished-at="2021-04-14T17:04:03 IST" duration-ms="13030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchQuestionArticleTest status=SUCCESS method=HelpPageTest.SearchQuestionArticleTest()[pri:4, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Testcases.HelpPageTest -->
+      <class name="Testcases.NotificationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:04:03 IST" name="setUp" finished-at="2021-04-14T17:04:21 IST" duration-ms="18321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="UnreadNotification()[pri:1, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:04:21 IST" name="UnreadNotification" description="Number of Unread Notifications under bell icon" finished-at="2021-04-14T17:07:06 IST" duration-ms="165171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UnreadNotification -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:07:06 IST" name="TearDown" finished-at="2021-04-14T17:07:17 IST" duration-ms="10240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UnreadNotification status=SUCCESS method=NotificationTest.UnreadNotification()[pri:1, instance:Testcases.NotificationTest@343570b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:07:17 IST" name="setUp" finished-at="2021-04-14T17:07:35 IST" duration-ms="18654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="MarkAllNotificationAsRead()[pri:2, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:07:35 IST" name="MarkAllNotificationAsRead" description="Marking all notification as read" finished-at="2021-04-14T17:10:32 IST" duration-ms="177048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MarkAllNotificationAsRead -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:10:32 IST" name="TearDown" finished-at="2021-04-14T17:10:45 IST" duration-ms="12158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MarkAllNotificationAsRead status=SUCCESS method=NotificationTest.MarkAllNotificationAsRead()[pri:2, instance:Testcases.NotificationTest@343570b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:10:45 IST" name="setUp" finished-at="2021-04-14T17:11:03 IST" duration-ms="18893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SelectNotification()[pri:3, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:11:03 IST" name="SelectNotification" description="Select a Notification" finished-at="2021-04-14T17:14:05 IST" duration-ms="181746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectNotification -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:14:05 IST" name="TearDown" finished-at="2021-04-14T17:14:16 IST" duration-ms="11200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectNotification status=SUCCESS method=NotificationTest.SelectNotification()[pri:3, instance:Testcases.NotificationTest@343570b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Testcases.NotificationTest -->
+      <class name="Testcases.AboutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:42:10 IST" name="setUp" finished-at="2021-04-14T16:42:45 IST" duration-ms="34774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AboutDronaPageTest()[pri:1, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:42:45 IST" name="AboutDronaPageTest" description="About Drona Page Test" finished-at="2021-04-14T16:45:10 IST" duration-ms="145242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AboutDronaPageTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:45:10 IST" name="TearDown" finished-at="2021-04-14T16:45:22 IST" duration-ms="12563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AboutDronaPageTest status=SUCCESS method=AboutPageTest.AboutDronaPageTest()[pri:1, instance:Testcases.AboutPageTest@28975c28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:45:22 IST" name="setUp" finished-at="2021-04-14T16:45:41 IST" duration-ms="19113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PrivacyPolicyPageTest()[pri:2, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:45:41 IST" name="PrivacyPolicyPageTest" description="Privacy Policy Page Test" finished-at="2021-04-14T16:48:11 IST" duration-ms="149758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrivacyPolicyPageTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:48:11 IST" name="TearDown" finished-at="2021-04-14T16:48:22 IST" duration-ms="10886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PrivacyPolicyPageTest status=SUCCESS method=AboutPageTest.PrivacyPolicyPageTest()[pri:2, instance:Testcases.AboutPageTest@28975c28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:48:22 IST" name="setUp" finished-at="2021-04-14T16:48:40 IST" duration-ms="17725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TermsOfUsePageTest()[pri:3, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:48:40 IST" name="TermsOfUsePageTest" description="Terms of use Page Test" finished-at="2021-04-14T16:51:02 IST" duration-ms="141820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TermsOfUsePageTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:51:02 IST" name="TearDown" finished-at="2021-04-14T16:51:12 IST" duration-ms="10609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TermsOfUsePageTest status=SUCCESS method=AboutPageTest.TermsOfUsePageTest()[pri:3, instance:Testcases.AboutPageTest@28975c28] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Testcases.AboutPageTest -->
+      <class name="Testcases.SetUpUPIandBankDetailsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:14:16 IST" name="setUp" finished-at="2021-04-14T17:14:35 IST" duration-ms="18144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SetInClinicTimingsTest()[pri:1, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:14:35 IST" name="SetInClinicTimingsTest" description="Set Up Bank Details" finished-at="2021-04-14T17:17:22 IST" duration-ms="167250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetInClinicTimingsTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:17:22 IST" name="TearDown" finished-at="2021-04-14T17:17:35 IST" duration-ms="13061" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SetInClinicTimingsTest status=SUCCESS method=SetUpUPIandBankDetailsTest.SetInClinicTimingsTest()[pri:1, instance:Testcases.SetUpUPIandBankDetailsTest@157853da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:17:35 IST" name="setUp" finished-at="2021-04-14T17:17:53 IST" duration-ms="17765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SetUPIdetailsTest()[pri:2, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:17:53 IST" name="SetUPIdetailsTest" description="Set Up UPI details " finished-at="2021-04-14T17:20:45 IST" duration-ms="172159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUPIdetailsTest -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:20:45 IST" name="TearDown" finished-at="2021-04-14T17:20:56 IST" duration-ms="11675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SetUPIdetailsTest status=SUCCESS method=SetUpUPIandBankDetailsTest.SetUPIdetailsTest()[pri:2, instance:Testcases.SetUpUPIandBankDetailsTest@157853da] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Testcases.SetUpUPIandBankDetailsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

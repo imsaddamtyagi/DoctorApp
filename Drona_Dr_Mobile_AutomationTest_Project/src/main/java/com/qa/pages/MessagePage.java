@@ -14,7 +14,9 @@ public class MessagePage extends BasePage {
 	private By getStartedBtn=     MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Get Started\")"));
     private By Messages=          By.xpath("//android.widget.TextView[@text='Messages']");
 	private By PlusSign=          By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.ImageView");
-	private By Email=             MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Email\")"));
+	private By Push=              MobileBy.AndroidUIAutomator(String.format("new UiSelector().textContains(\"Push Notification\")"));
+	private By SMS=               MobileBy.AndroidUIAutomator(String.format("new UiSelector().textContains(\"SMS\")"));
+	private By Email=             MobileBy.AndroidUIAutomator(String.format("new UiSelector().textContains(\"Email\")"));
 	private By Camp=              MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Medical Camp\")"));
     private By DateRange=         MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Select Date Or Date range\")"));
     private By DatePicker=        MobileBy.AndroidUIAutomator(String.format("new UiSelector().textContains(\"Single date picker\")"));
@@ -44,7 +46,68 @@ public class MessagePage extends BasePage {
 		getStartedclk.click();
 		ExtentLogger.pass( "Get Started Button" + " Clicked ");
 	}
-
+	
+	public void SendPushNotificationInMessageSection() throws InterruptedException
+	{
+		testUtil.doClickIfAvailable(Messages, "Messages Section");
+		System.out.println("Message section clicked");
+		testUtil.doClickIfAvailable(PlusSign, "Plus Sign");
+		testUtil.doClick(Push, "Push Notification");
+		testUtil.doClick(Camp, "Camp");
+		testUtil.doClick(DateRange, "Date Range");
+		Thread.sleep(3000);
+		testUtil.doClick(DatePicker, "Date Picker");
+		testUtil.doClick(DateChoosen, "Date Choosen");
+		testUtil.doClick(ClinicName, "Clinic Name");
+		testUtil.doClick(DocName, "Doctor Name");
+		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.doClick(Next, "Next");
+		testUtil.doClick(Consulted, "Consulted Within");
+		testUtil.doClick(Hours, "Hours");
+		Thread.sleep(4000);
+		testUtil.doClick(Gender, "Gender Dropdown");
+		Thread.sleep(4000);
+		testUtil.doClick(GenderMale, "Male");
+		Thread.sleep(4000);
+		testUtil.doClick(AgeGroup, "Age Group Dropdwon");
+		Thread.sleep(4000);
+		testUtil.doClick(Age, "Age Selected");
+		Thread.sleep(4000);
+        testUtil.dosendKeys(Tag, 10, "Travel", "Tag");
+        testUtil.doClickStartsWith(SendMsg, "Send Message (", "Send message");	
+	}
+	
+	
+	public void SendSMSInMessageSection() throws InterruptedException
+	{
+		testUtil.doClickIfAvailable(Messages, "Messages Section");
+		System.out.println("Message section clicked");
+		testUtil.doClickIfAvailable(PlusSign, "Plus Sign");
+		testUtil.doClick(SMS, "SMS");
+		testUtil.doClick(Camp, "Camp");
+		testUtil.doClick(DateRange, "Date Range");
+		Thread.sleep(3000);
+		testUtil.doClick(DatePicker, "Date Picker");
+		testUtil.doClick(DateChoosen, "Date Choosen");
+		testUtil.doClick(ClinicName, "Clinic Name");
+		testUtil.doClick(DocName, "Doctor Name");
+		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.doClick(Next, "Next");
+		testUtil.doClick(Consulted, "Consulted Within");
+		testUtil.doClick(Hours, "Hours");
+		Thread.sleep(4000);
+		testUtil.doClick(Gender, "Gender Dropdown");
+		Thread.sleep(4000);
+		testUtil.doClick(GenderMale, "Male");
+		Thread.sleep(4000);
+		testUtil.doClick(AgeGroup, "Age Group Dropdwon");
+		Thread.sleep(4000);
+		testUtil.doClick(Age, "Age Selected");
+		Thread.sleep(4000);
+        testUtil.dosendKeys(Tag, 10, "Travel", "Tag");
+        testUtil.doClickStartsWith(SendMsg, "Send Message (", "Send message");	
+	}
+	
 	
 	public void SendEmailInMessageSection() throws InterruptedException
 	{
@@ -75,8 +138,8 @@ public class MessagePage extends BasePage {
         testUtil.dosendKeys(Tag, 10, "Travel", "Tag");
         testUtil.doClickStartsWith(SendMsg, "Send Message (", "Send message");
 
-
 	}
+	
 	
 	
 

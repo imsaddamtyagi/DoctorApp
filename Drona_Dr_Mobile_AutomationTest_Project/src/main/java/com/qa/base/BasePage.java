@@ -50,12 +50,8 @@ public class BasePage {
 			
 			URL url = new URL("http://0.0.0.0:4723/wd/hub");
 			
-			driver = new AppiumDriver<MobileElement>(url, caps);
-		
-			driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
-             Thread.sleep(20000);
-			System.out.println("Wait over, proceeding for test execution now...");
-			
+			driver = new AppiumDriver<MobileElement>(url, caps);		
+			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);			
 			}catch(Exception exp) {
 				System.out.println("Cause is : "+exp.getCause());
 				System.out.println("Message is : "+exp.getMessage());

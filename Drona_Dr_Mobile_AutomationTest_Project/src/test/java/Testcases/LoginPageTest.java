@@ -11,7 +11,7 @@ public class LoginPageTest extends BasePage{
 	
     @FrameworkAnnotation(author= {"Husain"},category = CategoryType.LoginPageTest)
 	@Test(priority = 1 ,enabled = true , description = "Verify mobile login functionality.")
-	public void loginMobileNumberTest() {
+	public void loginMobileNumberTest() throws InterruptedException {
 		
 		loginPage = new LoginPage();
 		loginPage.loginByMobileNumber();
