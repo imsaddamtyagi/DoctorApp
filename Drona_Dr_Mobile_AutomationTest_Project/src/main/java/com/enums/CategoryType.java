@@ -15,5 +15,6 @@ public enum CategoryType {
 	SetUpUPIandBankDetailsTest,
 	AboutPageTest,
 	HelpPageTest,
+	MessagePageTest,
 	
 }

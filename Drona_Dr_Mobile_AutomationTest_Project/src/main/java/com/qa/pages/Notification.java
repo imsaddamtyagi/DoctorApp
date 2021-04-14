@@ -15,7 +15,7 @@ public class Notification extends BasePage {
 
 	TestUtil testUtil;
 	private By getStartedBtn= MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Get Started\")"));
-	private By BellIcon=      By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView");  
+//	private By BellIcon=      By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.TextView");
 	private By Notification=  By.className("android.widget.TextView");
 	private By MarkRead=      By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView");
 	private By Details=       By.xpath("//android.widget.TextView[@index=1 and contains(@text,'Notification Detail')]");
@@ -40,11 +40,12 @@ public class Notification extends BasePage {
 	
 	public void UnReadNotification() throws InterruptedException
 	{
-			Thread.sleep(10000);
-			testUtil.doClick(BellIcon,"Bell Icon");
+		//	testUtil.doClick(BellIcon,"Bell Icon");
+		//	testUtil.doClickIfAvailable(BellIcon, "Bell Icon");
+			ExtentLogger.pass( "Bell Icon" + " Clicked ");
 			System.out.println("Bell icon clicked");
-			Thread.sleep(5000);
-			
+			Thread.sleep(40000);
+			System.out.println("wait over");
 			   List<MobileElement> Notif = driver.findElements(Notification);
 				  for(MobileElement button : Notif){
 				  if(button.getText().startsWith("Notifications")){
@@ -58,19 +59,26 @@ public class Notification extends BasePage {
 	
 	public void MarkAllNotificationAsRead() throws InterruptedException
 	{
-			Thread.sleep(10000);
-			testUtil.doClick(BellIcon,"Bell Icon");
-			Thread.sleep(10000);
+		//	testUtil.doClick(BellIcon,"Bell Icon");
+		//	testUtil.doClickIfAvailable(BellIcon, "Bell Icon");
+		//	Thread.sleep(10000);
+			ExtentLogger.pass( "Bell Icon" + " Clicked ");
+			System.out.println("Bell icon clicked");
+			Thread.sleep(40000);
+			System.out.println("wait over");
 			testUtil.doClick(MarkRead,"Mark All as read");						
 }
 	
 	
 	public void SelectNotificationDetails() throws InterruptedException
 	{
-			Thread.sleep(10000);
-			testUtil.doClick(BellIcon,"Bell Icon");
-			Thread.sleep(15000);
-			
+	//		testUtil.doClick(BellIcon,"Bell Icon");
+	//		testUtil.doClickIfAvailable(BellIcon, "Bell Icon");
+			ExtentLogger.pass( "Bell Icon" + " Clicked ");
+			System.out.println("Bell icon clicked");
+			Thread.sleep(40000);
+			System.out.println("wait over");
+
 			 List<MobileElement> Notif = driver.findElements(Notification);
 			  for(MobileElement button : Notif){
 			  if(button.getText().startsWith("Appointment ")){

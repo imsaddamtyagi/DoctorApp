@@ -15,7 +15,7 @@ public class HelpPage extends BasePage {
 	
 	TestUtil testUtil;
 	private By getStartedBtn=     MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Get Started\")"));
-	private By SideMenu=	      By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView");
+	private By SideMenu=	      By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView"); 
 	private By Help=              By.xpath("//android.widget.TextView[@text='Help']");
 	private By Contact=           By.xpath("//android.widget.TextView[@text='Contact Us']");
 	private By Call=              By.xpath("//android.widget.TextView[@text='Call our support']");
@@ -47,7 +47,8 @@ public class HelpPage extends BasePage {
 	
 	public void CallOurSupport()
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(Contact, "Contact Us");
 		testUtil.doClick(Call, "Call our Support");
@@ -56,7 +57,8 @@ public class HelpPage extends BasePage {
 	
 	public void SendUsEmail()
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(Contact, "Contact Us");
 		testUtil.doClick(Email, "Send us an Email");	
@@ -64,7 +66,8 @@ public class HelpPage extends BasePage {
 
 	public void ViewAllQuestions() throws InterruptedException
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(ViewAll, "View all Questions");
 		testUtil.doClick(Ques, "Question");	
@@ -76,7 +79,8 @@ public class HelpPage extends BasePage {
 	
 	public void SearchQuestions()
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(Search, "Searching");
 	    Actions action = new Actions(driver);

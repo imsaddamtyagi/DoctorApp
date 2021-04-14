@@ -37,9 +37,11 @@ public class About extends BasePage {
 	}
 	
 	
-	public void AboutDrona()
+	public void AboutDrona() throws InterruptedException
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
+		System.out.println("Side menu clicked");
 		testUtil.doClick(About, "About");
 		testUtil.doClick(AboutDrona, "About Drona");
         String PageName= driver.findElement(AboutDronaHeader).getText();
@@ -47,9 +49,11 @@ public class About extends BasePage {
 	}
 	
 	
-	public void PrivacyPolicy()
+	public void PrivacyPolicy() throws InterruptedException
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
+		System.out.println("Side menu clicked");
 		testUtil.doClick(About, "About");
 		testUtil.doClick(PrivacyPolicy, "Privacy Policy");
         String PageName= driver.findElement(PrivacyPolicy).getText();
@@ -58,9 +62,11 @@ public class About extends BasePage {
 	
 	
 	
-	public void TermsOfUse()
+	public void TermsOfUse() throws InterruptedException
 	{
-		testUtil.doClick(SideMenu, "Side Menu");
+	//	testUtil.doClick(SideMenu, "Side Menu");
+		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
+		System.out.println("Side menu clicked");
 		testUtil.doClick(About, "About");
 		testUtil.doClick(TermOfUse, "Terms OF Use");
         String PageName= driver.findElement(TermOfUse).getText();

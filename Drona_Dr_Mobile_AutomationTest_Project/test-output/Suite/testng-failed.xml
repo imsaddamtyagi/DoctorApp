@@ -6,15 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcases.NotificationTest">
+      <class name="Testcases.MessagePageTest">
         <methods>
-          <include name="MarkAllNotificationAsRead"/>
-          <include name="UnreadNotification"/>
+          <include name="SendEmailInMessageSection"/>
           <include name="setUp"/>
-          <include name="SelectNotification"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- Testcases.NotificationTest -->
+      </class> <!-- Testcases.MessagePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

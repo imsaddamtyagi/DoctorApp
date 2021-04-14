@@ -23,7 +23,7 @@ public class TestBase {
 			
 		
 		 File classpathRoot = new File(System.getProperty("user.dir")); File app = new
-		 File(classpathRoot, "//app//app-arm64-v8a-release.apk");
+		 File(classpathRoot, "//app//DoctorApp_Staging.apk");
 		 
 
 		try {

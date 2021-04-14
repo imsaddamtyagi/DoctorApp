@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -15,6 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.io.Files;
 import com.qa.base.BasePage;
 import com.qa.reports.ExtentLogger;
+
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -40,6 +44,37 @@ public void doClick(By locator , String elementName) {
 		ele.click();	
 		ExtentLogger.pass( elementName + " Clicked ");
 	}
+
+
+public void doClickIfAvailable(By locator , String elementName)
+{
+	   
+	   boolean b=  driver.findElements(locator).size()>0;
+	   if(b==true) {
+        driver.findElement(locator).click();
+		ExtentLogger.pass( elementName + " Clicked ");
+	   }else
+	   {
+		    System.out.println("Not Found"+elementName+", Please click manually");
+			ExtentLogger.pass(elementName + " Clicked ");
+
+		   }
+
+
+}
+
+public void doClickStartsWith(By locator ,String startswith, String elementName)
+{
+	   List<MobileElement> Notif = driver.findElements(locator);
+		  for(MobileElement button : Notif){
+		  if(button.getText().startsWith(startswith)){
+		    button.click();
+		   ExtentLogger.pass(elementName + " Clicked"); 
+
+		  }}
+
+}
+
 	
 	public void dosendKeys(By locator,int timeout , String value ,String elementName) {
 		WebDriverWait wait = new WebDriverWait(driver, timeout);

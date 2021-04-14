@@ -32,7 +32,7 @@ public class BasePage {
 		
 		startTime = System.nanoTime();
 		 File classpathRoot = new File(System.getProperty("user.dir"));
-		 File app =           new File(classpathRoot, "//app//app-arm64-v8a-release.apk");
+		 File app =           new File(classpathRoot, "//app//DoctorApp_Staging.apk");
 
 		try {
 			
@@ -53,8 +53,8 @@ public class BasePage {
 			driver = new AppiumDriver<MobileElement>(url, caps);
 		
 			driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
-
-			
+             Thread.sleep(20000);
+			System.out.println("Wait over, proceeding for test execution now...");
 			
 			}catch(Exception exp) {
 				System.out.println("Cause is : "+exp.getCause());
