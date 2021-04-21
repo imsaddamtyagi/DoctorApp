@@ -1,82 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-14T16:42:10 IST" name="Suite" finished-at="2021-04-14T17:20:56 IST" duration-ms="2326701">
+  <suite started-at="2021-04-20T16:27:51 IST" name="Suite" finished-at="2021-04-20T16:42:28 IST" duration-ms="876565">
     <groups>
     </groups>
-    <test started-at="2021-04-14T16:42:10 IST" name="Test" finished-at="2021-04-14T17:20:56 IST" duration-ms="2326701">
+    <test started-at="2021-04-20T16:27:51 IST" name="Test" finished-at="2021-04-20T16:42:28 IST" duration-ms="876565">
       <class name="Testcases.HelpPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:51:12 IST" name="setUp" finished-at="2021-04-14T16:51:31 IST" duration-ms="18547" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:27:51 IST" name="setUp" finished-at="2021-04-20T16:28:16 IST" duration-ms="25070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CallOurSupportPageTest()[pri:1, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:51:31 IST" name="CallOurSupportPageTest" description="Call our Support Page Test" finished-at="2021-04-14T16:54:08 IST" duration-ms="157430" status="PASS">
+        <test-method signature="CallOurSupportPageTest()[pri:1, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:28:16 IST" name="CallOurSupportPageTest" description="Call our Support Page Test" finished-at="2021-04-20T16:31:03 IST" duration-ms="167131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CallOurSupportPageTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:54:08 IST" name="TearDown" finished-at="2021-04-14T16:54:20 IST" duration-ms="11871" status="PASS">
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:31:03 IST" name="TearDown" finished-at="2021-04-20T16:31:15 IST" duration-ms="11858" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CallOurSupportPageTest status=SUCCESS method=HelpPageTest.CallOurSupportPageTest()[pri:1, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+                <![CDATA[[TestResult name=CallOurSupportPageTest status=SUCCESS method=HelpPageTest.CallOurSupportPageTest()[pri:1, instance:Testcases.HelpPageTest@60015ef5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:54:20 IST" name="setUp" finished-at="2021-04-14T16:54:38 IST" duration-ms="17474" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:31:15 IST" name="setUp" finished-at="2021-04-20T16:31:35 IST" duration-ms="20256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SendUsEmailPageTest()[pri:2, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:54:38 IST" name="SendUsEmailPageTest" description="Send Us Email Page Test" finished-at="2021-04-14T16:57:11 IST" duration-ms="153277" status="PASS">
+        <test-method signature="SendUsEmailPageTest()[pri:2, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:31:35 IST" name="SendUsEmailPageTest" description="Send Us Email Page Test" finished-at="2021-04-20T16:34:12 IST" duration-ms="156356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SendUsEmailPageTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:57:11 IST" name="TearDown" finished-at="2021-04-14T16:57:21 IST" duration-ms="10361" status="PASS">
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:34:12 IST" name="TearDown" finished-at="2021-04-20T16:34:23 IST" duration-ms="11421" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SendUsEmailPageTest status=SUCCESS method=HelpPageTest.SendUsEmailPageTest()[pri:2, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+                <![CDATA[[TestResult name=SendUsEmailPageTest status=SUCCESS method=HelpPageTest.SendUsEmailPageTest()[pri:2, instance:Testcases.HelpPageTest@60015ef5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:57:21 IST" name="setUp" finished-at="2021-04-14T16:57:40 IST" duration-ms="18498" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:34:23 IST" name="setUp" finished-at="2021-04-20T16:34:48 IST" duration-ms="25037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ViewAllFAQTest()[pri:3, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T16:57:40 IST" name="ViewAllFAQTest" description="View All Question Page Test" finished-at="2021-04-14T17:00:28 IST" duration-ms="168082" status="PASS">
+        <test-method signature="ViewAllFAQTest()[pri:3, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:34:48 IST" name="ViewAllFAQTest" description="View All Question Page Test" finished-at="2021-04-20T16:37:36 IST" duration-ms="167330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ViewAllFAQTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:00:28 IST" name="TearDown" finished-at="2021-04-14T17:00:41 IST" duration-ms="12713" status="PASS">
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:37:36 IST" name="TearDown" finished-at="2021-04-20T16:37:51 IST" duration-ms="15621" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ViewAllFAQTest status=SUCCESS method=HelpPageTest.ViewAllFAQTest()[pri:3, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+                <![CDATA[[TestResult name=ViewAllFAQTest status=SUCCESS method=HelpPageTest.ViewAllFAQTest()[pri:3, instance:Testcases.HelpPageTest@60015ef5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:00:41 IST" name="setUp" finished-at="2021-04-14T17:01:00 IST" duration-ms="19890" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:37:51 IST" name="setUp" finished-at="2021-04-20T16:38:13 IST" duration-ms="21311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SearchQuestionArticleTest()[pri:4, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:01:00 IST" name="SearchQuestionArticleTest" description="Search Question article" finished-at="2021-04-14T17:03:50 IST" duration-ms="169472" status="PASS">
+        <test-method signature="SearchQuestionArticleTest()[pri:4, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:38:13 IST" name="SearchQuestionArticleTest" description="Search Question article" finished-at="2021-04-20T16:42:17 IST" duration-ms="244405" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Yes'] (tried for 15 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text='Yes'] (tried for 15 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.utility.TestUtil.doClick(TestUtil.java:42)
+at com.qa.pages.HelpPage.SearchQuestions(HelpPage.java:91)
+at Testcases.HelpPageTest.SearchQuestionArticleTest(HelpPageTest.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-RE3DM9I', ip: '172.1.0.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Users\admin\git\Doctor\D..., appPackage: com.dronadrapp, autoAcceptAlerts: true, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\admin\git\Doctor\D..., autoAcceptAlerts: true, automationName: Appium, deviceName: Android Emulator, platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1290d387-922b-47b1-83c3-3cf3625e50d5
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Yes']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchQuestionArticleTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@3943a2be]" started-at="2021-04-14T17:03:50 IST" name="TearDown" finished-at="2021-04-14T17:04:03 IST" duration-ms="13030" status="PASS">
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.HelpPageTest@60015ef5]" started-at="2021-04-20T16:42:17 IST" name="TearDown" finished-at="2021-04-20T16:42:28 IST" duration-ms="10723" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchQuestionArticleTest status=SUCCESS method=HelpPageTest.SearchQuestionArticleTest()[pri:4, instance:Testcases.HelpPageTest@3943a2be] output={null}]]]>
+                <![CDATA[[TestResult name=SearchQuestionArticleTest status=FAILURE method=HelpPageTest.SearchQuestionArticleTest()[pri:4, instance:Testcases.HelpPageTest@60015ef5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -84,164 +161,6 @@
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- Testcases.HelpPageTest -->
-      <class name="Testcases.NotificationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:04:03 IST" name="setUp" finished-at="2021-04-14T17:04:21 IST" duration-ms="18321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="UnreadNotification()[pri:1, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:04:21 IST" name="UnreadNotification" description="Number of Unread Notifications under bell icon" finished-at="2021-04-14T17:07:06 IST" duration-ms="165171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UnreadNotification -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:07:06 IST" name="TearDown" finished-at="2021-04-14T17:07:17 IST" duration-ms="10240" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=UnreadNotification status=SUCCESS method=NotificationTest.UnreadNotification()[pri:1, instance:Testcases.NotificationTest@343570b7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:07:17 IST" name="setUp" finished-at="2021-04-14T17:07:35 IST" duration-ms="18654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="MarkAllNotificationAsRead()[pri:2, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:07:35 IST" name="MarkAllNotificationAsRead" description="Marking all notification as read" finished-at="2021-04-14T17:10:32 IST" duration-ms="177048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MarkAllNotificationAsRead -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:10:32 IST" name="TearDown" finished-at="2021-04-14T17:10:45 IST" duration-ms="12158" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MarkAllNotificationAsRead status=SUCCESS method=NotificationTest.MarkAllNotificationAsRead()[pri:2, instance:Testcases.NotificationTest@343570b7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:10:45 IST" name="setUp" finished-at="2021-04-14T17:11:03 IST" duration-ms="18893" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SelectNotification()[pri:3, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:11:03 IST" name="SelectNotification" description="Select a Notification" finished-at="2021-04-14T17:14:05 IST" duration-ms="181746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectNotification -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.NotificationTest@343570b7]" started-at="2021-04-14T17:14:05 IST" name="TearDown" finished-at="2021-04-14T17:14:16 IST" duration-ms="11200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SelectNotification status=SUCCESS method=NotificationTest.SelectNotification()[pri:3, instance:Testcases.NotificationTest@343570b7] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- Testcases.NotificationTest -->
-      <class name="Testcases.AboutPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:42:10 IST" name="setUp" finished-at="2021-04-14T16:42:45 IST" duration-ms="34774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="AboutDronaPageTest()[pri:1, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:42:45 IST" name="AboutDronaPageTest" description="About Drona Page Test" finished-at="2021-04-14T16:45:10 IST" duration-ms="145242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AboutDronaPageTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:45:10 IST" name="TearDown" finished-at="2021-04-14T16:45:22 IST" duration-ms="12563" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AboutDronaPageTest status=SUCCESS method=AboutPageTest.AboutDronaPageTest()[pri:1, instance:Testcases.AboutPageTest@28975c28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:45:22 IST" name="setUp" finished-at="2021-04-14T16:45:41 IST" duration-ms="19113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="PrivacyPolicyPageTest()[pri:2, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:45:41 IST" name="PrivacyPolicyPageTest" description="Privacy Policy Page Test" finished-at="2021-04-14T16:48:11 IST" duration-ms="149758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrivacyPolicyPageTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:48:11 IST" name="TearDown" finished-at="2021-04-14T16:48:22 IST" duration-ms="10886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PrivacyPolicyPageTest status=SUCCESS method=AboutPageTest.PrivacyPolicyPageTest()[pri:2, instance:Testcases.AboutPageTest@28975c28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:48:22 IST" name="setUp" finished-at="2021-04-14T16:48:40 IST" duration-ms="17725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TermsOfUsePageTest()[pri:3, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:48:40 IST" name="TermsOfUsePageTest" description="Terms of use Page Test" finished-at="2021-04-14T16:51:02 IST" duration-ms="141820" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TermsOfUsePageTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.AboutPageTest@28975c28]" started-at="2021-04-14T16:51:02 IST" name="TearDown" finished-at="2021-04-14T16:51:12 IST" duration-ms="10609" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TermsOfUsePageTest status=SUCCESS method=AboutPageTest.TermsOfUsePageTest()[pri:3, instance:Testcases.AboutPageTest@28975c28] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- Testcases.AboutPageTest -->
-      <class name="Testcases.SetUpUPIandBankDetailsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:14:16 IST" name="setUp" finished-at="2021-04-14T17:14:35 IST" duration-ms="18144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SetInClinicTimingsTest()[pri:1, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:14:35 IST" name="SetInClinicTimingsTest" description="Set Up Bank Details" finished-at="2021-04-14T17:17:22 IST" duration-ms="167250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetInClinicTimingsTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:17:22 IST" name="TearDown" finished-at="2021-04-14T17:17:35 IST" duration-ms="13061" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SetInClinicTimingsTest status=SUCCESS method=SetUpUPIandBankDetailsTest.SetInClinicTimingsTest()[pri:1, instance:Testcases.SetUpUPIandBankDetailsTest@157853da] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:17:35 IST" name="setUp" finished-at="2021-04-14T17:17:53 IST" duration-ms="17765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SetUPIdetailsTest()[pri:2, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:17:53 IST" name="SetUPIdetailsTest" description="Set Up UPI details " finished-at="2021-04-14T17:20:45 IST" duration-ms="172159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUPIdetailsTest -->
-        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Testcases.SetUpUPIandBankDetailsTest@157853da]" started-at="2021-04-14T17:20:45 IST" name="TearDown" finished-at="2021-04-14T17:20:56 IST" duration-ms="11675" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SetUPIdetailsTest status=SUCCESS method=SetUpUPIandBankDetailsTest.SetUPIdetailsTest()[pri:2, instance:Testcases.SetUpUPIandBankDetailsTest@157853da] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- Testcases.SetUpUPIandBankDetailsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

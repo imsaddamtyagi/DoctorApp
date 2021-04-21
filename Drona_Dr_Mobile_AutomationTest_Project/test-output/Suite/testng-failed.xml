@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcases.MessagePageTest">
+      <class name="Testcases.HelpPageTest">
         <methods>
-          <include name="SendEmailInMessageSection"/>
+          <include name="SearchQuestionArticleTest"/>
           <include name="setUp"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- Testcases.MessagePageTest -->
+      </class> <!-- Testcases.HelpPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

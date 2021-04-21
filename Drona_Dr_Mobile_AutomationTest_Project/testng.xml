@@ -8,12 +8,7 @@
 
   <test thread-count="5" name="Test">
     <classes>  
-                        <class name="Testcases.AboutPageTest"/>  
-                        <class name="Testcases.HelpPageTest"/>  
-                        <class name="Testcases.NotificationTest"/>  
-                        <class name="Testcases.SetUpUPIandBankDetailsTest"/>  
-                        
-            
+   <class name="Testcases.HelpPageTest"/>            
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
