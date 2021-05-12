@@ -17,7 +17,8 @@ public class SetUpVirtualConsultTiming extends BasePage {
 	
 	TestUtil testUtil;
 	private By getStart=    MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Get Started\")"));
-	private By SetUpTime=   By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.ScrollView/android.view.ViewGroup/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView");
+	private By SideMenu=    By.xpath("//android.widget.TextView[@text='']");
+	private By EditTime=    By.xpath("//android.widget.TextView[@text='Edit Doctor Timings']");
 	private By Schedule=    By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[4]/android.view.ViewGroup[2]/android.widget.TextView");
 	
 	private By Sunday=	    By.xpath("//android.widget.TextView[@text='Su']");
@@ -52,14 +53,10 @@ public class SetUpVirtualConsultTiming extends BasePage {
 	
 	public void SetUpVirtualConsultingTimings() throws InterruptedException
 	{
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	
-		testUtil.doClick(SetUpTime,"Set Up");
-		testUtil.doClick(Schedule,"Virtual Timing");
+		Thread.sleep(10000);
+		testUtil.doClick(SideMenu,"Side Menu");
+		testUtil.doClick(EditTime,"Edit Doctor Timings");
+		testUtil.doClick(Schedule," Virtual Timing Setup");
 		Thread.sleep(10000);
 
 		testUtil.doClick(Sunday);

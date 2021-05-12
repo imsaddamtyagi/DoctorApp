@@ -32,7 +32,7 @@ public class BasePage {
 		
 		startTime = System.nanoTime();
 		 File classpathRoot = new File(System.getProperty("user.dir"));
-		 File app =           new File(classpathRoot, "//app//Doctor_Dev.apk");
+		 File app =           new File(classpathRoot, "//app//Doctor_staging.apk");
 
 		try {
 			

@@ -14,7 +14,8 @@ public class SetUpUPIandBankDetails extends BasePage  {
 	TestUtil testUtil;
 	
 	private By getStartedBtn = MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Get Started\")"));
-	private By SetUpTimings=   By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.ScrollView/android.view.ViewGroup/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView");
+	private By SideMenu=    By.xpath("//android.widget.TextView[@text='']");
+	private By EditTime=    By.xpath("//android.widget.TextView[@text='Edit Doctor Timings']");
 	private By Staff=          MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Staff\"))");	   
 	private By AddBank=        By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[1]/android.widget.TextView");
 	private By BankName=       By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText[1]");
@@ -26,6 +27,8 @@ public class SetUpUPIandBankDetails extends BasePage  {
 	private By AddUPI=         By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[2]/android.widget.TextView");
 	private By UPI=            By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText");
 	private By Save2=          By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView");
+	
+	
 	
 	public SetUpUPIandBankDetails()
 	{
@@ -47,9 +50,11 @@ public class SetUpUPIandBankDetails extends BasePage  {
 	{
 	
 		Thread.sleep(10000);
-		testUtil.doClick(SetUpTimings,"Set Up Timings");
+		testUtil.doClick(SideMenu,"Side Menu");
+		testUtil.doClick(EditTime,"Edit Doctor Timings");
 		Thread.sleep(10000);
-		testUtil.doClick(Staff,"");
+		testUtil.doClick(Staff,""); // Scrolling Down
+		Thread.sleep(5000);
 		testUtil.doClick(AddBank,"Add Bank Details");
 		testUtil.dosendKeys(BankName, 10, "Mohd Husain Ahmad", "User Name");
 		testUtil.dosendKeys(AccNo, 10, "21830005289", "Account Number");
@@ -63,9 +68,11 @@ public class SetUpUPIandBankDetails extends BasePage  {
 	{
 	
 		Thread.sleep(10000);
-		testUtil.doClick(SetUpTimings,"Set Up Timings");
+		testUtil.doClick(SideMenu,"Side Menu");
+		testUtil.doClick(EditTime,"Edit Doctor Timings");
 		Thread.sleep(10000);
 		testUtil.doClick(Staff,"");
+		Thread.sleep(5000);
 		testUtil.doClick(AddUPI,"Add UPI Details");
 		testUtil.dosendKeys(UPI, 10, "9716322119", "UPI Number");
 		testUtil.doClick(Save2,"Save Button");

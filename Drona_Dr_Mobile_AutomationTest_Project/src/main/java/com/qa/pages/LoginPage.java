@@ -23,7 +23,6 @@ public class LoginPage extends BasePage{
 	
 	public void getStartedClick() {
 		
-	//	WebElement getStartedclk = driver.findElement(getStartedBtn);
 		testUtil.doClick(getStartedBtn, "Get started");
 	}
 	
@@ -37,15 +36,11 @@ public class LoginPage extends BasePage{
 		getStartedClick();
 		String MobileNo = prop.getProperty("LoginMobileNo").trim();
 		loginByUserName(MobileNo);
-		testUtil.dosendKeys(confirm	, 10, prop.getProperty("Password"),"Confirm Button");
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		testUtil.dosendKeys(confirm	, 10, prop.getProperty("Password"),"Confirm Button");			
+		Thread.sleep(5000);
 		testUtil.doClick(login,"Login Button");	
 		Thread.sleep(40000);
-System.out.println("Wait over, after clicking on login button");
+        System.out.println("Wait over, Test Begins now...");
 		}
 	
 	

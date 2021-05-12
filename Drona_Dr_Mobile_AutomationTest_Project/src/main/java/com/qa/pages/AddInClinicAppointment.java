@@ -20,7 +20,7 @@ public class AddInClinicAppointment extends BasePage {
 	private By Patient=	       By.xpath("//android.widget.TextView[@text='Patients']");
 	private By PlusSign=       By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.ImageView");
     private By Appointment=    By.xpath("//android.widget.TextView[@index=1 and @text='Add Appointment']");
-    private By Slot=           By.xpath("//android.widget.TextView[@text='05:00 PM']");
+    private By Slot=           By.xpath("//android.widget.TextView[@text='05:40']");
     private By SearchBox=      By.xpath("//android.widget.EditText[@text='Search patient by name or number']");
     private By Searched=       By.className("android.widget.TextView");
     private By Confirm=        MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))."

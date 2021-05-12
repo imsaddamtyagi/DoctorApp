@@ -47,7 +47,6 @@ public class HelpPage extends BasePage {
 	
 	public void CallOurSupport()
 	{
-	//	testUtil.doClick(SideMenu, "Side Menu");
 		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(Contact, "Contact Us");
@@ -57,7 +56,6 @@ public class HelpPage extends BasePage {
 	
 	public void SendUsEmail()
 	{
-	//	testUtil.doClick(SideMenu, "Side Menu");
 		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(Contact, "Contact Us");
@@ -66,7 +64,6 @@ public class HelpPage extends BasePage {
 
 	public void ViewAllQuestions() throws InterruptedException
 	{
-	//	testUtil.doClick(SideMenu, "Side Menu");
 		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(ViewAll, "View all Questions");
@@ -79,7 +76,6 @@ public class HelpPage extends BasePage {
 	
 	public void SearchQuestions()
 	{
-	//	testUtil.doClick(SideMenu, "Side Menu");
 		testUtil.doClickIfAvailable(SideMenu, "Side Menu");
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(Search, "Searching");

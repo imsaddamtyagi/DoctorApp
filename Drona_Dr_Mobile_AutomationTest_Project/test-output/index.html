@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.HelpPageTest" class="method navigator-link" hash-for-method="SearchQuestionArticleTest">SearchQuestionArticleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,17 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.HelpPageTest" class="method navigator-link" hash-for-method="CallOurSupportPageTest">CallOurSupportPageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.HelpPageTest" class="method navigator-link" hash-for-method="SendUsEmailPageTest">SendUsEmailPageTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.HelpPageTest" class="method navigator-link" hash-for-method="ViewAllFAQTest">ViewAllFAQTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Testcases.CommunityPageTest" class="method navigator-link" hash-for-method="PickTopicsToShow">PickTopicsToShow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,93 +117,19 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Testcases.HelpPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchQuestionArticleTest">
-                  </a> <!-- SearchQuestionArticleTest -->
-                  <span class="method-name">SearchQuestionArticleTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@text=&apos;Yes&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.utility.TestUtil.doClick(TestUtil.java:42)
-	at com.qa.pages.HelpPage.SearchQuestions(HelpPage.java:91)
-	at Testcases.HelpPageTest.SearchQuestionArticleTest(HelpPageTest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-RE3DM9I&apos;, ip: &apos;172.1.0.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {app: C:\Users\admin\git\Doctor\D..., appPackage: com.dronadrapp, autoAcceptAlerts: true, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\admin\git\Doctor\D..., autoAcceptAlerts: true, automationName: Appium, deviceName: Android Emulator, platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1290d387-922b-47b1-83c3-3cf3625e50d5
-*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Yes&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 31 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Search Question article)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Testcases.HelpPageTest</span>
+              <span class="class-name">Testcases.CommunityPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CallOurSupportPageTest">
-                  </a> <!-- CallOurSupportPageTest -->
-                  <span class="method-name">CallOurSupportPageTest</span>
+                  <a name="PickTopicsToShow">
+                  </a> <!-- PickTopicsToShow -->
+                  <span class="method-name">PickTopicsToShow</span>
                   <em>
-(Call our Support Page Test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SendUsEmailPageTest">
-                  </a> <!-- SendUsEmailPageTest -->
-                  <span class="method-name">SendUsEmailPageTest</span>
-                  <em>
-(Send Us Email Page Test)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ViewAllFAQTest">
-                  </a> <!-- ViewAllFAQTest -->
-                  <span class="method-name">ViewAllFAQTest</span>
-                  <em>
-(View All Question Page Test)                  </em>
+(Pic Topics to Show in Community Section)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,7 +149,7 @@ Session ID: 1290d387-922b-47b1-83c3-3cf3625e50d5
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Testcases.HelpPageTest&quot;/&gt;
+      &lt;class name=&quot;Testcases.CommunityPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -287,28 +189,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SearchQuestionArticleTest')
-data.setCell(0, 2, 'Testcases.HelpPageTest')
-data.setCell(0, 3, 244405);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ViewAllFAQTest')
-data.setCell(1, 2, 'Testcases.HelpPageTest')
-data.setCell(1, 3, 167330);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CallOurSupportPageTest')
-data.setCell(2, 2, 'Testcases.HelpPageTest')
-data.setCell(2, 3, 167131);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'SendUsEmailPageTest')
-data.setCell(3, 2, 'Testcases.HelpPageTest')
-data.setCell(3, 3, 156356);
+data.setCell(0, 1, 'PickTopicsToShow')
+data.setCell(0, 2, 'Testcases.CommunityPageTest')
+data.setCell(0, 3, 144908);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -334,56 +224,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Testcases.HelpPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Testcases.CommunityPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">CallOurSupportPageTest</span>
-                <span class="method-start">25071 ms</span>
+                <span class="method-name">PickTopicsToShow</span>
+                <span class="method-start">21657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">TearDown([TestResult name=CallOurSupportPageTest status=SUCCESS method=HelpPageTest.CallOurSupportPageTest()[...)</span>
-                <span class="method-start">192206 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">204066 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SendUsEmailPageTest</span>
-                <span class="method-start">224323 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown([TestResult name=SendUsEmailPageTest status=SUCCESS method=HelpPageTest.SendUsEmailPageTest()[pri:2,...)</span>
-                <span class="method-start">380681 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">392103 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ViewAllFAQTest</span>
-                <span class="method-start">417141 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown([TestResult name=ViewAllFAQTest status=SUCCESS method=HelpPageTest.ViewAllFAQTest()[pri:3, instance:...)</span>
-                <span class="method-start">584473 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">600094 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SearchQuestionArticleTest</span>
-                <span class="method-start">621405 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown([TestResult name=SearchQuestionArticleTest status=FAILURE method=HelpPageTest.SearchQuestionArticleT...)</span>
-                <span class="method-start">865815 ms</span>
+                <span class="method-name">TearDown([TestResult name=PickTopicsToShow status=SUCCESS method=CommunityPageTest.PickTopicsToShow()[pri:1, ...)</span>
+                <span class="method-start">166570 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -16,5 +16,6 @@ public enum CategoryType {
 	AboutPageTest,
 	HelpPageTest,
 	MessagePageTest,
+	CommunityPageTest,
 	
 }

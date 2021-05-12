@@ -17,8 +17,10 @@ public class SetUpInClinicTiming extends BasePage{
 	TestUtil testUtil;
 	
 	private By getStart=    MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Get Started\")"));
-	private By SetUpTime=   By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.ScrollView/android.view.ViewGroup/android.widget.HorizontalScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.TextView");
-	private By Schedule=    By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView");	
+	private By SideMenu=    By.xpath("//android.widget.TextView[@text='']");
+	private By EditTime=    By.xpath("//android.widget.TextView[@text='Edit Doctor Timings']");
+	private By Schedule=    By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView");
+	
 	private By Sunday=	    By.xpath("//android.widget.TextView[@text='Su']");
 	private By Monday=	    By.xpath("//android.widget.TextView[@text='M']");
 	private By Tuesday=	    By.xpath("//android.widget.TextView[@text='Tu']");
@@ -51,12 +53,9 @@ public class SetUpInClinicTiming extends BasePage{
 	
 	public void SetUpInClinicTimings() throws InterruptedException
 	{
-		try {
 			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		testUtil.doClick(SetUpTime,"Setup Timing");
+		testUtil.doClick(SideMenu,"Side Menu");
+		testUtil.doClick(EditTime,"Edit Doctor Timings");
 		testUtil.doClick(Schedule,"In clininc Timing Setup");
 		Thread.sleep(10000);
 	
