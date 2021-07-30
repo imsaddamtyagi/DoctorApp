@@ -17,7 +17,7 @@ public class DoctorProfileDetailsTest extends BasePage {
 	static long endTime;
 
 
-	  @FrameworkAnnotation(author= {"Husain"},category = CategoryType.DoctorProfileDetailsTest)
+	        @FrameworkAnnotation(author= {"Husain"},category = CategoryType.DoctorProfileDetailsTest)
 			@Test(priority = 1 ,enabled = true, description ="Doctor profile Basic Details Test")
 			public void BasicDetailsTest() throws InterruptedException {
 				

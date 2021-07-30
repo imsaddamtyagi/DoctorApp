@@ -68,7 +68,7 @@ public class HelpPage extends BasePage {
 		testUtil.doClick(Help, "Help");
 		testUtil.doClick(ViewAll, "View all Questions");
 		testUtil.doClick(Ques, "Question");	
-		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.ScrollingUntilEndOfPage();
 		testUtil.doClick(Yes, "Was this Question Helpful");
 		
 	}
@@ -83,7 +83,7 @@ public class HelpPage extends BasePage {
         action.sendKeys("9716322119").perform();
 		testUtil.doClick(Box, "Patients");
 		testUtil.doClick(Ques2, "Question");
-		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.ScrollingUntilEndOfPage();
 		testUtil.doClick(Yes, "Was this Question Helpful");
 
 

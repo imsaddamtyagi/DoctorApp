@@ -15,7 +15,16 @@ public class CommunityPage extends BasePage {
     private By Menu=              By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView");
     private By Done=              MobileBy.AndroidUIAutomator(String.format("new UiSelector().text(\"Done\")"));
 	
-
+    private By SavePost=  By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView");
+    private By Thanks=    By.xpath("//android.widget.TextView[@index=1 and @text='Thanks']");
+    private By Comment=   By.xpath("//android.widget.TextView[@index=1 and @text='Comment']");
+    private By AddCom=    By.xpath("//android.widget.EditText[@index=0 and @text='Add a comment']");
+    private By SaveCom=   By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]/android.widget.ImageView");
+    private By Share=     By.xpath("//android.widget.TextView[@index=1 and @text='Share']");
+    private By UnSave=    By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.ImageView");
+    
+    
+    
 	public CommunityPage()
 	{
 		initProp() ;
@@ -50,4 +59,31 @@ public class CommunityPage extends BasePage {
 		testUtil.doClick(Done,"Done");
 
 	}
+	
+	public void SavedPost() throws InterruptedException
+	{
+		testUtil.doClickIfAvailable(community, "Community Section");
+		testUtil.doClickIfAvailable(SavePost, "Saving A Post");
+		Thread.sleep(5000);
+		testUtil.doClickIfAvailable(Thanks, "Thanks on a Post");
+		testUtil.doClickIfAvailable(Comment, "Comment");
+		Thread.sleep(7000);
+		testUtil.dosendKeys(AddCom, 10, "Comment posted via Automation", "Comment Added");
+		testUtil.doClickIfAvailable(SaveCom, "Comment Saved");
+		testUtil.doClickIfAvailable(Share, "Share");
+		Thread.sleep(7000);
+		testUtil.NavigateBack();
+		Thread.sleep(7000);
+		testUtil.doClickIfAvailable(UnSave, "Unsave");
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

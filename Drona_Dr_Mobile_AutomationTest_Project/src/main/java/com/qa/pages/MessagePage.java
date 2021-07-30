@@ -60,7 +60,7 @@ public class MessagePage extends BasePage {
 		testUtil.doClick(DateChoosen, "Date Choosen");
 		testUtil.doClick(ClinicName, "Clinic Name");
 		testUtil.doClick(DocName, "Doctor Name");
-		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.ScrollingUntilEndOfPage();
 		testUtil.doClick(Next, "Next");
 		testUtil.doClick(Consulted, "Consulted Within");
 		testUtil.doClick(Hours, "Hours");
@@ -91,7 +91,7 @@ public class MessagePage extends BasePage {
 		testUtil.doClick(DateChoosen, "Date Choosen");
 		testUtil.doClick(ClinicName, "Clinic Name");
 		testUtil.doClick(DocName, "Doctor Name");
-		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.ScrollingUntilEndOfPage();
 		testUtil.doClick(Next, "Next");
 		testUtil.doClick(Consulted, "Consulted Within");
 		testUtil.doClick(Hours, "Hours");
@@ -122,7 +122,7 @@ public class MessagePage extends BasePage {
 		testUtil.doClick(DateChoosen, "Date Choosen");
 		testUtil.doClick(ClinicName, "Clinic Name");
 		testUtil.doClick(DocName, "Doctor Name");
-		TestUtil.ScrollingUntilEndOfPage();
+		testUtil.ScrollingUntilEndOfPage();
 		testUtil.doClick(Next, "Next");
 		testUtil.doClick(Consulted, "Consulted Within");
 		testUtil.doClick(Hours, "Hours");

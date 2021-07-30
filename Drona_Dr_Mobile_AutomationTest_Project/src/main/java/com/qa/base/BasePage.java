@@ -32,7 +32,7 @@ public class BasePage {
 		
 		startTime = System.nanoTime();
 		 File classpathRoot = new File(System.getProperty("user.dir"));
-		 File app =           new File(classpathRoot, "//app//Doctor_staging.apk");
+		 File app =           new File(classpathRoot, "//app//app-arm64-v8a-release.apk");
 
 		try {
 			
@@ -51,7 +51,7 @@ public class BasePage {
 			URL url = new URL("http://0.0.0.0:4723/wd/hub");
 			
 			driver = new AppiumDriver<MobileElement>(url, caps);		
-			driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);			
+			driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);			
 			}catch(Exception exp) {
 				System.out.println("Cause is : "+exp.getCause());
 				System.out.println("Message is : "+exp.getMessage());

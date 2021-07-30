@@ -2,10 +2,13 @@ package com.qa.utility;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
@@ -17,11 +20,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.io.Files;
 import com.qa.base.BasePage;
 import com.qa.reports.ExtentLogger;
-
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+
 
 public class TestUtil extends BasePage{
 	
@@ -103,7 +106,12 @@ public void doClickStartsWith(By locator ,String startswith, String elementName)
 		ele.sendKeys(value);
 	}
 	
-	public static  void ScrollingUntilEndOfPage()
+	
+
+	
+	
+	
+	public  void ScrollingUntilEndOfPage()
 	{
 	@SuppressWarnings("rawtypes")
 	TouchAction action =new TouchAction(driver);
@@ -128,6 +136,26 @@ public void doClickStartsWith(By locator ,String startswith, String elementName)
 	    return localTime.format(dateTimeFormatter).charAt(n);
 	}
 	
+	public String TodayDate()
+	{
+		   Date date = Calendar.getInstance().getTime();  
+           DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy");  
+           String strDate = dateFormat.format(date);  
+		
+	  String str= strDate.replaceAll("[^\\d]","").trim(); // Replace values that are not Digits.
+      String zero="0";
+      if(str.substring(0,1).equals(zero)) // If first digit of date is 0.
+      {
+		  String Digit =str.substring(1,2);  // Second digit from todays's date
+		  return Digit;
+      }
+      else
+      { 
+         String Digit =str.substring(0,2);  // First digit and second digit from todays's date
+         return Digit;
+      }
+	}
+
 	public String getText(By locator , String elementName) {
 
 		WebElement ele = driver.findElement(locator);
@@ -136,7 +164,18 @@ public void doClickStartsWith(By locator ,String startswith, String elementName)
 		return value;
 		}
 	
+	
+	
 
+	
+     public void NavigateBack()
+     {
+    	 driver.navigate().back();
+ 		ExtentLogger.pass("Navigated Backward");
+
+     }
+	
+	
 	public static void takeScreenshotAtEndOfTest(String TestName) throws IOException {
 		String generatedString = RandomStringUtils.randomAlphabetic(3);
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

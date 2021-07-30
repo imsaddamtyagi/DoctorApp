@@ -25,6 +25,18 @@ public class CommunityPageTest extends BasePage {
 			loginPage.loginByMobileNumber();
 			community.PickTopics();		
 		}
+	    
+	    
+	        @FrameworkAnnotation(author= {"Husain"},category = CategoryType.CommunityPageTest)
+	  		@Test(priority = 2 ,enabled = true , description = "Save a post,Like,comment and Share and then UnSave it")
+	  		public void SavedPostLikeCommentShareAndUnSave() throws InterruptedException {
+	  			
+	  			loginPage = new LoginPage();
+	  			community= new CommunityPage(); 
+	  			loginPage.loginByMobileNumber();
+	  			community.SavedPost();		
+	  		}
+	    
 
 
 }

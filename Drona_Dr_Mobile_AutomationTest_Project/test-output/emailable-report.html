@@ -9,10 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">177,441</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,510</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Testcases.CommunityPageTest</td><td><a href="#m0">PickTopicsToShow</a></td><td rowspan="1">1620821166391</td><td rowspan="1">144908</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Testcases.AddPatientPageTest</td><td><a href="#m0">TearDown</a></td><td rowspan="1">1627036144518</td><td rowspan="1">2058</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Testcases.AddPatientPageTest</td><td><a href="#m1">AddPatientTest</a></td><td rowspan="1">1627036122596</td><td rowspan="1">21906</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Testcases.CommunityPageTest#PickTopicsToShow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">Testcases.AddPatientPageTest#TearDown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=AddPatientTest status=FAILURE method=AddPatientPageTest.AddPatientTest()[pri:1, instance:Testcases.AddPatientPageTest@7748410a] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RE3DM9I&apos;, ip: &apos;172.1.0.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Users\admin\git\Doctor\D..., appPackage: com.dronadrapp, autoAcceptAlerts: true, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\admin\git\Doctor\D..., autoAcceptAlerts: true, automationName: Appium, deviceName: Android Emulator, platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_64_arm64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: b7e4d3fc-8b71-4459-b9c7-6d82ae7f2e77
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qa.utility.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:181)
+	at com.qa.base.BasePage.TearDown(BasePage.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Testcases.AddPatientPageTest#AddPatientTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RE3DM9I&apos;, ip: &apos;172.1.0.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Users\admin\git\Doctor\D..., appPackage: com.dronadrapp, autoAcceptAlerts: true, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\admin\git\Doctor\D..., autoAcceptAlerts: true, automationName: Appium, deviceName: Android Emulator, platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86_64_arm64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3040, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 172, takesScreenshot: true, viewportRect: {height: 2529, left: 0, top: 172, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: b7e4d3fc-8b71-4459-b9c7-6d82ae7f2e77
+*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;Get Started&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.MobileBy.findElement(MobileBy.java:61)
+	at io.appium.java_client.MobileBy$ByAndroidUIAutomator.findElement(MobileBy.java:224)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.utility.TestUtil.doClick(TestUtil.java:45)
+	at com.qa.pages.LoginPage.getStartedClick(LoginPage.java:26)
+	at com.qa.pages.LoginPage.loginByMobileNumber(LoginPage.java:36)
+	at Testcases.AddPatientPageTest.AddPatientTest(AddPatientPageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
